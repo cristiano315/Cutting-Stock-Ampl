@@ -1,0 +1,21 @@
+param L := 192;
+
+set MODULI := M1 M2 M3 M4 M5 M6 ;
+
+param d :=
+  M1 64
+  M2 50
+  M3 91
+  M4 60
+  M5 57
+  M6 51
+;
+
+param l :=
+  M1 10
+  M2 10
+  M3 22
+  M4 32
+  M5 48
+  M6 35
+;

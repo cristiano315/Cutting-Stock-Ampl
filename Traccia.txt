@@ -1,0 +1,15 @@
+algoritmo che genera pattern di taglio piu possibile, poi ricavare la soluzione con numero di colonne fissato limitato (modello),
+soluzione del solutore sia ottenuta arrotondando per eccesso soluzione del pl, sia soluzione intera vera e propria.
+ovviamente se valori domande sono alti, mi aspetto che soluzione ottenuta arrotondando non dovrebbe essere distante da soluzione con variabili intere,
+viceversa con domande basse potrebbe esserci differenza notevole
+poi utilizzare generazione di colonne attraverso algoritmo di pricing, con algoritmo di knapsack, ottengo soluzione del problema rilassato, dove ho certezza che problema rilassato considera tutti
+i possibili cutting pattern utili, poi ottengo soluzione intera con arrotondamento e valuto differenza.
+in pratica confronto di 5 soluzioni: quelle predertimante da algoritmo euristico, quella del problema intero, quella arrotondando per eccesso, poi entra in gioco algoritmo di pricing e ne ho altre 2: ottima rilassato e intera arrotondando.
+questo per una singola istanza, poi bisogna fare esperimenti esplorando istanze con caratteristiche diverse, ripetendo questa cosa.
+2 param principali:
+1) dimensioni del problema, nel senso quanti moduli diversi ci sono. magari ne faccio alcuni in cui il numero non e' eccessivo (es tra 5 e 10) e altri in cui ne ho intorno ai 50.
+2) entita' della domanda, quindi per ogni modulo se ho numero grande o piccolo di pezzi (es domande dell'ordine delle unita' magari da 1 a 10 unita' per modulo) e un altro numero random tra 50 e 100
+3) lunghezza dell'asse da cui ricavo i vari moduli: 2 casi, asse molto lungo rispetto a lunghezze dei moduli da generare, oppure asse abbastaza corto rispetto a lunghezza moduli, quindi ricavo pochi pezzi
+per ogni parametro ne considero 2 fasce(quelle scritte), quindi facendo tutte le combinazioni vengono 8 classi, per ogni classe bastano 3 istanze per classe, se ne faccio di piu va bene ma dipende dal tempo di calcolo.
+l'importante comunque e' coprire tutte le classi e che le differenze abbiano un impatto sul tempo di calcolo, le iterazioni dell'algoritmo di pricing, sulle differenze tra le soluzioni trovate.
+l'implementazione dell'algoritmo richiede un po' piu' di pazienza.

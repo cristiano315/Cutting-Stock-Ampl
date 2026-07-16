@@ -1,0 +1,23 @@
+param L := 950;
+
+set MODULI := M1 M2 M3 M4 M5 M6 M7 ;
+
+param d :=
+  M1 4
+  M2 10
+  M3 7
+  M4 5
+  M5 5
+  M6 9
+  M7 9
+;
+
+param l :=
+  M1 44
+  M2 50
+  M3 40
+  M4 39
+  M5 42
+  M6 43
+  M7 35
+;
