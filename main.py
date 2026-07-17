@@ -5,7 +5,7 @@ import time
 from utils.generate_data import genera_dati, esporta_in_dat, leggi_da_dat
 import tracemalloc 
 
-MODALITA_CARICAMENTO = False #Parametro per decidere se caricare i dati da file .dat o generarli ex-novo
+MODALITA_CARICAMENTO = True #Parametro per decidere se caricare i dati da file .dat o generarli ex-novo
 
 cartella_dat = "data"
 
