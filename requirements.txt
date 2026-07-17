@@ -1,0 +1,4 @@
+amplpy==0.17.0
+matplotlib==3.11.0
+numpy==2.5.1
+pandas==3.0.3
